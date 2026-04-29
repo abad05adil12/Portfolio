@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+    <div class="page-transition" id="pageTransition"></div>
+
+    <nav id="mainNav">
+        <a href="#" class="nav-logo" onclick="navigateTo('home');return false">AD.</a>
+        <ul class="nav-links">
+            <li><a href="#" onclick="navigateTo('home');return false" data-page="home" class="active">Home</a></li>
+            <li><a href="#" onclick="navigateTo('about');return false" data-page="about">About</a></li>
+            <li><a href="#" onclick="navigateTo('projects');return false" data-page="projects">Projects</a></li>
+            <li><a href="#" onclick="navigateTo('services');return false" data-page="services">Services</a></li>
+            <li><a href="#" onclick="navigateTo('contact');return false" data-page="contact">Contact</a></li>
+        </ul>
+        <a href="#" class="nav-cta" onclick="navigateTo('contact');return false">Hire Me →</a>
+    </nav>
+
+    <div class="page active" id="home">
+        <div class="home-clip-1"></div>
+        <div class="home-clip-2"></div>
+        <div class="home-clip-3"></div>
+        <div class="home-inner">
+            <div class="home-tag">Available for work</div>
+            <h1 class="hero-name">
+                <span class="outline">Abad</span>
+                <span class="accent-word">Adil</span>
+                <span>Dev.</span>
+            </h1>
+            <p class="hero-desc">Full-stack engineer crafting <strong>fast, scalable, and beautiful</strong> digital
+                products. I turn complex problems into elegant code and seamless experiences.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn-primary" onclick="navigateTo('projects');return false">View Projects
+                    <span>→</span></a>
+                <a href="#" class="btn-outline" onclick="navigateTo('contact');return false">Get in Touch</a>
+            </div>
+            <div class="hero-scroll-hint">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+        <div class="marquee-wrap">
+            <div class="marquee-track" id="marqueeTrack">
+                <span class="marquee-item">React <span class="marquee-dot"></span></span>
+                <span class="marquee-item">Node.js <span class="marquee-dot"></span></span>
+                <span class="marquee-item">TypeScript <span class="marquee-dot"></span></span>
+                <span class="marquee-item">PostgreSQL <span class="marquee-dot"></span></span>
+                <span class="marquee-item">AWS <span class="marquee-dot"></span></span>
+                <span class="marquee-item">Next.js <span class="marquee-dot"></span></span>
+                <span class="marquee-item">GraphQL <span class="marquee-dot"></span></span>
+                <span class="marquee-item">Docker <span class="marquee-dot"></span></span>
+                <span class="marquee-item">Figma <span class="marquee-dot"></span></span>
+                <span class="marquee-item">React <span class="marquee-dot"></span></span>
+                <span class="marquee-item">Node.js <span class="marquee-dot"></span></span>
+                <span class="marquee-item">TypeScript <span class="marquee-dot"></span></span>
+                <span class="marquee-item">PostgreSQL <span class="marquee-dot"></span></span>
+                <span class="marquee-item">AWS <span class="marquee-dot"></span></span>
+                <span class="marquee-item">Next.js <span class="marquee-dot"></span></span>
+                <span class="marquee-item">GraphQL <span class="marquee-dot"></span></span>
+                <span class="marquee-item">Docker <span class="marquee-dot"></span></span>
+                <span class="marquee-item">Figma <span class="marquee-dot"></span></span>
+            </div>
+        </div>
+        <div class="stats-row">
+            <div class="stat-item reveal" data-delay="1">
+                <span class="stat-num" data-count="3">0</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item reveal" data-delay="2">
+                <span class="stat-num" data-count="30">0</span>
+                <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="stat-item reveal" data-delay="3">
+                <span class="stat-num" data-count="10">0</span>
+                <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-item reveal" data-delay="4">
+                <span class="stat-num" data-count="99">0</span>
+                <span class="stat-label">% On-Time Delivery</span>
+            </div>
+        </div>
+        <footer>
+            <span class="footer-logo">AD.</span>
+            <span class="footer-copy">© 2026 Abad Adil.</span>
+            <div class="footer-socials">
+                <a href="https://github.com/abad05adil12" class="footer-social">GitHub</a>
+                <a href="https://www.linkedin.com/in/abaadadil648" class="footer-social">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="page" id="about">
+        <div class="about-clip-top"></div>
+        <div class="about-clip-accent"></div>
+        <div class="about-inner">
+            <div class="section-label reveal">About Me</div>
+            <h2 class="section-title reveal" data-delay="1">The human<br>behind the <em>code</em></h2>
+            <div class="about-grid">
+                <div class="about-bio reveal-left" data-delay="1">
+                    <p>Hey! I'm <strong>Abad Adil</strong>, a full-stack developer based in Pakistan with over 3
+                        years of experience building products that live at the intersection of <strong>performance,
+                            design, and developer experience</strong>.</p>
+                    <p>I started my journey tinkering with HTML/CSS in high school, fell in love with the craft, and
+                        never looked back. Today I work with modern stacks React, Node, to
+                        ship products from zero to production.</p>
+                    <p>When I'm not pushing code, you'll find me <strong>contributing to open source</strong>, writing
+                        dev articles, hiking the Pacific Crest Trail, or perfecting my home espresso setup.</p>
+                    <p>I believe the best software is invisible it simply <em>works</em>, beautifully and reliably.
+                    </p>
+                    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="#" class="btn-primary" style="font-size:.72rem;padding:.65rem 1.4rem">Download CV →</a>
+                        <a href="#" class="btn-outline" style="font-size:.72rem;padding:.65rem 1.4rem"
+                            onclick="navigateTo('contact');return false">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="about-photo reveal-right" data-delay="2">
+                    <div class="photo-frame">
+                        <img src="myimgfiltered.jpg" class="photo-placeholder"></img>
+                    </div>
+                    <div class="photo-badge">Open to work</div>
+                </div>
+            </div>
+
+            <div class="section-label reveal" style="margin-top:1rem">Skills & Tools</div>
+            <h3 class="section-title reveal" data-delay="1" style="font-size:clamp(1.8rem,3vw,3rem);margin-bottom:2rem">
+                What I work with</h3>
+            <div class="skills-grid">
+                <div class="skill-card reveal" data-delay="1">
+                    <span class="skill-icon">⚡</span>
+                    <div class="skill-name">Frontend</div>
+                    <div class="skill-desc">Building blazing-fast UIs with modern frameworks, pixel-perfect from design
+                        to code.</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span><span class="skill-tag">Next.js</span><span
+                            class="skill-tag">TypeScript</span><span class="skill-tag">Tailwind</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-delay="2">
+                    <span class="skill-icon">🔧</span>
+                    <div class="skill-name">Backend</div>
+                    <div class="skill-desc">Designing scalable APIs, microservices, and robust server architectures.
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span><span class="skill-tag">Express</span><span
+                            class="skill-tag">GraphQL</span><span class="skill-tag">REST</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-delay="3">
+                    <span class="skill-icon">🗄️</span>
+                    <div class="skill-name">Database</div>
+                    <div class="skill-desc">From relational to NoSQL — I design efficient schemas and write optimized
+                        queries.</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span><span
+                            class="skill-tag">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-delay="4">
+                    <span class="skill-icon">☁️</span>
+                    <div class="skill-name">Cloud & DevOps</div>
+                    <div class="skill-desc">CI/CD pipelines, containerization, and cloud-native deployments.</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span><span class="skill-tag">Docker</span><span
+                            class="skill-tag">GitHub Actions</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-delay="5">
+                    <span class="skill-icon">🎨</span>
+                    <div class="skill-name">Design</div>
+                    <div class="skill-desc">Collaborating in Figma, implementing design systems, and caring deeply about
+                        UX.</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span><span class="skill-tag">Framer</span><span
+                            class="skill-tag">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal" data-delay="6">
+                    <span class="skill-icon">🤖</span>
+                    <div class="skill-name">AI Integration</div>
+                    <div class="skill-desc">Embedding LLMs and AI capabilities into production apps with thoughtful UX.
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenAI</span><span class="skill-tag">LangChain</span><span
+                            class="skill-tag">RAG</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-label reveal">Experience</div>
+            <h3 class="section-title reveal" data-delay="1" style="font-size:clamp(1.8rem,3vw,3rem);margin-bottom:2rem">
+                Where I've worked</h3>
+            <div class="exp-list">
+                <div class="exp-item reveal">
+                    <div class="exp-period">Nov 2025 - Jan 2026</div>
+                    <div>
+                        <div class="exp-role">Full-Stack Developer Internship</div>
+                        <div class="exp-company">Develpers Corp</div>
+                        <div class="exp-desc">Hands on practice on projects and time management. It was an flexible internship.</div>
+                        <div class="exp-tech"><span class="exp-chip">Next.js</span><span
+                                class="exp-chip">React</span><span class="exp-chip">MongoDB</span><span
+                                class="exp-chip">Edge</span></div>
+                    </div>
+                    <div class="exp-arrow">→</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span class="footer-logo">AD.</span>
+            <span class="footer-copy">© 2026 Abad Adil</span>
+            <div class="footer-socials">
+                <a href="https://github.com/abad05adil12" class="footer-social">GitHub</a>
+                <a href="https://www.linkedin.com/in/abaadadil648" class="footer-social">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ===== PROJECTS ===== -->
+    <div class="page" id="projects">
+        <div class="projects-clip"></div>
+        <div class="projects-clip-bottom"></div>
+        <div class="projects-inner">
+            <div class="section-label reveal">Work</div>
+            <h2 class="section-title reveal" data-delay="1">Selected <em>projects</em></h2>
+            <div class="filter-bar reveal" data-delay="2">
+                <button class="filter-btn active" onclick="filterProjects('all',this)">All</button>
+                <button class="filter-btn" onclick="filterProjects('fullstack',this)">Full-Stack</button>
+                <button class="filter-btn" onclick="filterProjects('frontend',this)">Frontend</button>
+                <button class="filter-btn" onclick="filterProjects('backend',this)">Backend</button>
+                <button class="filter-btn" onclick="filterProjects('ai',this)">AI / ML</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- Featured -->
+                <div class="project-card project-featured reveal" data-category="fullstack">
+                    <div class="project-img">
+                        <div class="project-img-inner">◈</div>
+                        <div class="project-img-overlay">
+                            <a href="https://github.com/abad05adil12" class="project-overlay-btn">GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <span class="featured-badge">Featured</span>
+                            <span class="project-cat">Full-Stack.</span>
+                            <div class="project-title">E-com Website</div>
+                        </div>
+                        <div>
+                            <p class="project-desc">Full Stack website regarding Products and real time payments.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">Node.js</span><span class="stack-tag">Javascript</span><span
+                                    class="stack-tag">HTML</span><span class="stack-tag">MongoDb</span><span class="stack-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-delay="1" data-category="ai">
+                    <div class="project-img" style="background:#0F1219">
+                        <div class="project-img-inner" style="color:#1a2030">⬡</div>
+                        <div class="project-img-overlay">
+                            <a href="#" class="project-overlay-btn">Live Demo ↗</a>
+                            <a href="#" class="project-overlay-btn">GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat">AI · ML</span>
+                        <div class="project-title">Movie Recommendation Machine Learning.</div>
+                        <p class="project-desc">Machine Learning Model Predicts most suitable movie and recommend relevan one trained on 5000 dataset.</p>
+                        <div class="project-stack">
+                            <span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span
+                                class="stack-tag">FastAPI</span><span class="stack-tag">Javascript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-delay="2" data-category="fullstack">
+                    <div class="project-img" style="background:#120F19">
+                        <div class="project-img-inner" style="color:#1e1a2a">◉</div>
+                        <div class="project-img-overlay">
+                            <a href="#" class="project-overlay-btn">Live Demo ↗</a>
+                            <a href="#" class="project-overlay-btn">GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat">Ai Pwowered</span>
+                        <div class="project-title">Spam Email Detection</div>
+                        <p class="project-desc">AI-powered solution for identifying and filtering spam emails with high accuracy</p>
+                        <div class="project-stack">
+                            <span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span
+                                class="stack-tag">HTML</span><span class="stack-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-delay="1" data-category="backend">
+                    <div class="project-img" style="background:#0F1912">
+                        <div class="project-img-inner" style="color:#1a2a1e">⊡</div>
+                        <div class="project-img-overlay">
+                            <a href="#" class="project-overlay-btn">Live Demo ↗</a>
+                            <a href="#" class="project-overlay-btn">GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat">Front End</span>
+                        <div class="project-title">Password Manager</div>
+                        <p class="project-desc">Secure and user-friendly password manager with end-to-end encryption</p>
+                        <div class="project-stack">
+                            <span class="stack-tag">HTML</span><span class="stack-tag">Javascript</span><span
+                                class="stack-tag">CSS</span><span class="stack-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-delay="2" data-category="frontend">
+                    <div class="project-img" style="background:#191209">
+                        <div class="project-img-inner" style="color:#2a1e10">◈</div>
+                        <div class="project-img-overlay">
+                            <a href="#" class="project-overlay-btn">Live Demo ↗</a>
+                            <a href="#" class="project-overlay-btn">GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="project-cat">Backend</span>
+                        <div class="project-title">Secret Anime Guess</div>
+                        <p class="project-desc">A fun web app for guessing secret anime titles based on clues and hints.</p>
+                        <div class="project-stack">
+                            <span class="stack-tag">C++</span><span class="stack-tag">DSA</span><span
+                                class="stack-tag">File Handling</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <span class="footer-logo">AD.</span>
+            <span class="footer-copy">© 2026 Abad Adil</span>
+            <div class="footer-socials">
+                <a href="https://github.com/abad05adil12" class="footer-social">GitHub</a>
+                <a href="https://www.linkedin.com/in/abaadadil648" class="footer-social">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ===== SERVICES ===== -->
+    <div class="page" id="services">
+        <div class="services-clip"></div>
+        <div class="services-clip2"></div>
+        <div class="services-inner">
+            <div class="services-intro">
+                <div class="section-label reveal">Services</div>
+                <h2 class="section-title reveal" data-delay="1">What I can<br>build for <em>you</em></h2>
+                <p class="reveal" data-delay="2">From idea to launch, I cover the full development lifecycle. Whether
+                    you need a complete product or specialized expertise, I deliver quality and speed.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal" data-delay="1">
+                    <span class="service-num">01</span>
+                    <span class="service-icon">🖥️</span>
+                    <div class="service-name">Web Application Development</div>
+                    <p class="service-desc">Full-stack web apps built with React/Next.js on the front and Node.js or Go
+                        on the back. Scalable from MVP to millions of users.</p>
+                    <ul class="service-list">
+                        <li>SaaS platforms & dashboards</li>
+                        <li>Real-time collaborative apps</li>
+                        <li>E-commerce storefronts</li>
+                        <li>Internal tooling & admin panels</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="2">
+                    <span class="service-num">02</span>
+                    <span class="service-icon">📱</span>
+                    <div class="service-name">API Design & Backend</div>
+                    <p class="service-desc">Robust, well-documented REST & GraphQL APIs. Microservices architecture,
+                        database design, and cloud-native deployments.</p>
+                    <ul class="service-list">
+                        <li>RESTful & GraphQL APIs</li>
+                        <li>Microservices & event-driven arch</li>
+                        <li>Database design & optimization</li>
+                        <li>Third-party integrations</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="3">
+                    <span class="service-num">03</span>
+                    <span class="service-icon">🤖</span>
+                    <div class="service-name">AI Feature Integration</div>
+                    <p class="service-desc">Embed AI and LLMs into your product meaningfully. From chatbots to
+                        intelligent search, I make AI feel native to your app.</p>
+                    <ul class="service-list">
+                        <li>LLM-powered features (OpenAI, Anthropic)</li>
+                        <li>RAG & semantic search</li>
+                        <li>AI UX patterns & streaming</li>
+                        <li>Fine-tuning & prompt engineering</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="4">
+                    <span class="service-num">04</span>
+                    <span class="service-icon">🚀</span>
+                    <div class="service-name">Performance Optimization</div>
+                    <p class="service-desc">Slow app? I'll diagnose and fix it. Core Web Vitals, bundle sizes, database
+                        queries, caching — I've done it all.</p>
+                    <ul class="service-list">
+                        <li>Core Web Vitals & Lighthouse audits</li>
+                        <li>Bundle optimization & code splitting</li>
+                        <li>Database query tuning</li>
+                        <li>Edge caching & CDN setup</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="5">
+                    <span class="service-num">05</span>
+                    <span class="service-icon">☁️</span>
+                    <div class="service-name">Cloud & DevOps</div>
+                    <p class="service-desc">CI/CD pipelines, Docker/Kubernetes, AWS/GCP infrastructure. Ship faster with
+                        confidence and zero-downtime deploys.</p>
+                    <ul class="service-list">
+                        <li>CI/CD pipeline setup</li>
+                        <li>Docker & container orchestration</li>
+                        <li>AWS / GCP infrastructure</li>
+                        <li>Monitoring & alerting</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal" data-delay="6">
+                    <span class="service-num">06</span>
+                    <span class="service-icon">🎨</span>
+                    <div class="service-name">Technical Consulting</div>
+                    <p class="service-desc">Architecture reviews, tech stack decisions, code audits. Get a senior
+                        engineer's perspective without the full-time hire.</p>
+                    <ul class="service-list">
+                        <li>Architecture & stack consultation</li>
+                        <li>Code reviews & audits</li>
+                        <li>Technical interviews & hiring</li>
+                        <li>Team onboarding & training</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="process-section reveal">
+                <div class="process-title">How I work</div>
+                <div class="process-steps">
+                    <div class="process-step reveal" data-delay="1">
+                        <div class="step-dot">01</div>
+                        <div class="step-name">Discovery</div>
+                        <p class="step-desc">Deep-dive into your goals, constraints, and user needs. Define scope and
+                            success metrics.</p>
+                    </div>
+                    <div class="process-step reveal" data-delay="2">
+                        <div class="step-dot">02</div>
+                        <div class="step-name">Design</div>
+                        <p class="step-desc">Architecture planning, wireframes, technical spec. Align before a single
+                            line of code is written.</p>
+                    </div>
+                    <div class="process-step reveal" data-delay="3">
+                        <div class="step-dot">03</div>
+                        <div class="step-name">Build</div>
+                        <p class="step-desc">Weekly sprints, daily updates, transparent progress. Clean code, tests, and
+                            documentation.</p>
+                    </div>
+                    <div class="process-step reveal" data-delay="4">
+                        <div class="step-dot">04</div>
+                        <div class="step-name">Launch</div>
+                        <p class="step-desc">Deployment, monitoring, and post-launch support. Iterate based on real user
+                            data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span class="footer-logo">AD.</span>
+            <span class="footer-copy">© 2026 Abad Adil.</span>
+            <div class="footer-socials">
+                <a href="https://github.com/abad05adil12" class="footer-social">GitHub</a>
+                <a href="https://www.linkedin.com/in/abaadadil648" class="footer-social">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ===== CONTACT ===== -->
+    <div class="page" id="contact">
+        <div class="contact-clip"></div>
+        <div class="contact-clip2"></div>
+        <div class="contact-inner">
+            <div class="contact-info">
+                <div class="section-label reveal">Contact</div>
+                <h2 class="reveal" data-delay="1">Let's build<br>something <em>great</em></h2>
+                <p class="reveal" data-delay="2">Have a project in mind? Want to collaborate or just say hello? My inbox
+                    is always open. I'll get back to you within 24 hours.</p>
+                <div class="contact-links reveal" data-delay="3">
+                    <a href="mailto:abadadilwork@gmail.com" class="contact-link">
+                        <span class="contact-link-icon">✉</span>
+                        <div class="contact-link-text">
+                            <span class="contact-link-label">Email</span>
+                            <span class="contact-link-val">abadadilwork@gmail.com</span>
+                        </div>
+                        <span class="contact-link-arrow">→</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abaadadil648" class="contact-link">
+                        <span class="contact-link-icon">💼</span>
+                        <div class="contact-link-text">
+                            <span class="contact-link-label">LinkedIn</span>
+                            <span class="contact-link-val">linkedin.com/in/abaadadil648</span>
+                        </div>
+                        <span class="contact-link-arrow">→</span>
+                    </a>
+                    <a href="https://github.com/abad05adil12" class="contact-link">
+                        <span class="contact-link-icon">⌨</span>
+                        <div class="contact-link-text">
+                            <span class="contact-link-label">GitHub</span>
+                            <span class="contact-link-val">github.com/abad05adil12</span>
+                        </div>
+                        <span class="contact-link-arrow">→</span>
+                    </a>
+                </div>
+                <div style="margin-top:2.5rem;padding:1.5rem;border:1px solid var(--border);display:flex;gap:1rem;align-items:center"
+                    class="reveal" data-delay="4">
+                    <div
+                        style="width:10px;height:10px;border-radius:50%;background:#3EFFE0;animation:float 2s ease-in-out infinite;flex-shrink:0">
+                    </div>
+                    <div>
+                        <div
+                            style="font-size:.72rem;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.2rem">
+                            Currently available</div>
+                        <div style="font-size:.78rem;color:var(--muted)">Open to freelance & contract work. Earliest
+                            start: Jan 2025.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form reveal-right" data-delay="2">
+                <div id="formContainer">
+                    <div class="form-grid-2">
+                        <div class="form-row">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John" id="fname">
+                        </div>
+                        <div class="form-row">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe" id="lname">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@company.com" id="femail">
+                    </div>
+                    <div class="form-row">
+                        <label>Project Type</label>
+                        <select id="ftype">
+                            <option value="">Select a service</option>
+                            <option>Web Application Development</option>
+                            <option>API Design & Backend</option>
+                            <option>AI Feature Integration</option>
+                            <option>Performance Optimization</option>
+                            <option>Technical Consulting</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>Budget Range</label>
+                        <select id="fbudget">
+                            <option value="">Select budget</option>
+                            <option>$1k – $5k</option>
+                            <option>$5k – $15k</option>
+                            <option>$15k – $50k</option>
+                            <option>$50k+</option>
+                            <option>Let's discuss</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project, timeline, and goals..."
+                            id="fmessage"></textarea>
+                    </div>
+                    <button class="btn-submit" onclick="submitForm()">
+                        <span>Send Message</span><span>→</span>
+                    </button>
+                </div>
+                <div class="form-success" id="formSuccess">
+                    <span>✓</span>
+                    Message sent! I'll get back to you within 24 hours.
+                </div>
+            </div>
+        </div>
+        <footer style="position:relative;z-index:1">
+            <span class="footer-logo">AD.</span>
+            <span class="footer-copy">© 2026 Abad Adil</span>
+            <div class="footer-socials">
+                <a href="https://github.com/abad05adil12" class="footer-social">GitHub</a>
+                <a href="https://www.linkedin.com/in/abaadadil648" class="footer-social">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
